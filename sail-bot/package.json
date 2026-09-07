@@ -1,0 +1,23 @@
+{
+  "name": "sail-gaming-bot",
+  "version": "1.0.0",
+  "description": "SAIL Gaming Discord bot - tickets & welcome system",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "pm2": "pm2 start ecosystem.config.js",
+    "pm2:logs": "pm2 logs sail-bot",
+    "pm2:restart": "pm2 restart sail-bot",
+    "pm2:stop": "pm2 stop sail-bot"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "discord-html-transcripts": "3.2.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
