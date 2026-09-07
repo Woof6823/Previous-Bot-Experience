@@ -1,0 +1,19 @@
+{
+  "name": "esports-ticket-bot",
+  "version": "1.0.0",
+  "description": "Discord welcome + ticket system bot with SQLite persistence",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "pm2": "pm2 start src/index.js --name ticket-bot"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "better-sqlite3": "^11.3.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
